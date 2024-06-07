@@ -1,0 +1,36 @@
+.bg-card-header{
+    background-color: rgb(85, 138, 7);
+}
+.bg-salim{
+    background-color: rgb(85, 138, 7);
+}
+
+.text-end{
+    position: relative;
+    left: -15px;
+}
+
+
+/* Couleur de fond pour les éléments actifs de la pagination */
+.pagination .page-item.active .page-link {
+    background-color: rgb(85, 138, 7);
+    border-color: rgb(85, 138, 7);
+  }
+  
+  /* Couleur du texte pour les liens de la pagination */
+  .pagination .page-link {
+    color: rgb(85, 138, 7);
+    font-size: large;
+  }
+  
+  /* Couleur de survol pour les liens de la pagination */
+  .pagination .page-link:hover {
+    color: rgb(85, 138, 7);
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+  }
+  
+  .active{
+    background-color: rgb(195, 238, 195);
+    border-color: white;
+  }
