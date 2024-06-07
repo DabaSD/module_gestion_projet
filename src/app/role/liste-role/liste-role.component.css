@@ -1,36 +1,26 @@
-.bg-card-header{
-    background-color: rgb(85, 138, 7);
-}
-.bg-salim{
-    background-color: rgb(85, 138, 7);
-}
-
-.text-end{
-    position: relative;
-    left: -15px;
+.page-content {
+    flex: 1;
+    padding: 20px; /* Ajuste le padding selon tes besoins */
+    overflow-y: auto; /* Pour permettre le défilement si le contenu dépasse la hauteur de la fenêtre */
+    background-color: #f4f4f9; /* Optionnel : couleur de fond pour différencier du side-nav */
+    transition: margin-left 0.3s; /* Transition douce pour le cas où le side-nav est caché/affiché */
 }
 
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    background: #edf2f7;
+}
 
-/* Couleur de fond pour les éléments actifs de la pagination */
-.pagination .page-item.active .page-link {
-    background-color: rgb(85, 138, 7);
-    border-color: rgb(85, 138, 7);
-  }
-  
-  /* Couleur du texte pour les liens de la pagination */
-  .pagination .page-link {
-    color: rgb(85, 138, 7);
-    font-size: large;
-  }
-  
-  /* Couleur de survol pour les liens de la pagination */
-  .pagination .page-link:hover {
-    color: rgb(85, 138, 7);
-    background-color: #e9ecef;
-    border-color: #dee2e6;
-  }
-  
-  .active{
-    background-color: rgb(195, 238, 195);
-    border-color: white;
-  }
+.side-nav {
+    width: 250px; /* Ajuste la largeur selon tes besoins */
+    background-color: cyan;
+    transition: width 0.3s; /* Transition douce pour les animations */
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}

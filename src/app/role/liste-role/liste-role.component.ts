@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { SideNavComponent } from '../../side-nav/side-nav.component';
 
 @Component({
   selector: 'app-liste-role',
   standalone: true,
-  imports: [],
+  imports: [SideNavComponent],
   templateUrl: './liste-role.component.html',
   styleUrl: './liste-role.component.css'
 })
