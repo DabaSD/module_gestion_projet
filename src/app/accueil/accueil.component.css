@@ -4,7 +4,6 @@
     padding: 20px; /* Ajuste le padding selon tes besoins */
     overflow-y: auto; /* Pour permettre le défilement si le contenu dépasse la hauteur de la fenêtre */
     background-color: #f4f4f9; /* Optionnel : couleur de fond pour différencier du side-nav */
-    transition: margin-left 0.3s; /* Transition douce pour le cas où le side-nav est caché/affiché */
 }
 
 body {
@@ -20,8 +19,3 @@ body {
     transition: width 0.3s; /* Transition douce pour les animations */
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}

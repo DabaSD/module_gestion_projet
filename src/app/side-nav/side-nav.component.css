@@ -258,7 +258,7 @@ body {
   /*-----------------------------chiller-theme-------------------------------------------------*/
   
   .chiller-theme .sidebar-wrapper {
-    background: #31353D;
+    background: rgb(244, 239, 231);
 }
 
 .chiller-theme .sidebar-wrapper .sidebar-header,
@@ -280,7 +280,7 @@ body {
 .chiller-theme .sidebar-wrapper .sidebar-brand>a,
 .chiller-theme .sidebar-wrapper .sidebar-menu ul li a,
 .chiller-theme .sidebar-footer>a {
-    color: #818896;
+    color: black;
 }
 
 .chiller-theme .sidebar-wrapper .sidebar-menu ul li:hover>a,
@@ -288,18 +288,11 @@ body {
 .chiller-theme .sidebar-wrapper .sidebar-header .user-info,
 .chiller-theme .sidebar-wrapper .sidebar-brand>a:hover,
 .chiller-theme .sidebar-footer>a:hover i {
-    color: #b8bfce;
-}
-
-.page-wrapper.chiller-theme.toggled #close-sidebar {
-    color: #bdbdbd;
-}
-
-.page-wrapper.chiller-theme.toggled #close-sidebar:hover {
-    color: #ffffff;
+    color: #16c7ff;
 }
 
 .chiller-theme .sidebar-wrapper ul li:hover a i,
+.chiller-theme .sidebar-wrapper .sidebar-dropdown .sidebar-submenu li a:hover,
 .chiller-theme .sidebar-wrapper .sidebar-dropdown .sidebar-submenu li a:hover:before,
 .chiller-theme .sidebar-wrapper .sidebar-search input.search-menu:focus+span,
 .chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active a i {
@@ -311,15 +304,15 @@ body {
 .chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown div,
 .chiller-theme .sidebar-wrapper .sidebar-search input.search-menu,
 .chiller-theme .sidebar-wrapper .sidebar-search .input-group-text {
-    background: #3a3f48;
+    background:rgb(216, 215, 214);
 }
 
 .chiller-theme .sidebar-wrapper .sidebar-menu .header-menu span {
-    color: #6c7b88;
+    color: black;
 }
 
 .chiller-theme .sidebar-footer {
-    background: #3a3f48;
+    background: #76797d;
     box-shadow: 0px -1px 5px #282c33;
     border-top: 1px solid #464a52;
 }
