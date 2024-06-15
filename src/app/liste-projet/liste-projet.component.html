@@ -1,0 +1,52 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste projets</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Side Nav Component -->
+            <div class="col-md-3">
+                <app-side-nav></app-side-nav>
+            </div>
+            <!-- Contenu Principal -->
+            <div class="col-md-9 mt-5">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3>Liste des projets</h3>
+                    <div class="actions">
+                        <button class="btn btn-secondary mr-2" title="Archiver les projets sélectionnés"><i class="fas fa-archive"></i></button>
+                        <button class="btn btn-success mr-2" title="Terminer les projets sélectionnés"><i class="fas fa-check"></i></button>
+                        <button class="btn btn-primary" title="Démarrer les projets sélectionnés"><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+                <table class="table">
+            <thead>
+                <tr>
+                    <th>Sélection</th>
+                    <th>Titre</th>
+                    <th>Description</th>
+                    <th>Date de début</th>
+                    <th>Date de fin</th>
+                    <th>Statut</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let projet of projets">
+                    <td><input placeholder="d " type="checkbox" name="select_project" [value]="projet.nom"></td>
+                    <td><a href="#">{{ projet.nom }}</a></td>
+                    <td>{{ projet.description }}</td>
+                    <td>{{ projet.dateDebut | date: 'dd/MM/yyyy' }}</td>
+                    <td>{{ projet.dateFin | date: 'dd/MM/yyyy' }}</td>
+                    <td>{{ projet.type }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+</body>
+</html>

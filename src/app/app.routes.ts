@@ -4,6 +4,7 @@ import { ConnexionComponent } from './connexion/connexion.component';
 import { ListeRoleComponent } from './role/liste-role/liste-role.component';
 import { ProfilRoleComponent } from './role/profil-role/profil-role.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
+import { ListeProjetComponent } from './liste-projet/liste-projet.component';
 
 export const routes: Routes = [
     { path: 'accueil', component:  AccueilComponent,},
@@ -11,5 +12,6 @@ export const routes: Routes = [
     { path: 'accueil/liste-role', component:  ListeRoleComponent,},
     { path: 'accueil/profil-role', component:  ProfilRoleComponent,},
     { path: 'sidenav', component:  SideNavComponent,},
-    { path: '', redirectTo: '/accueil', pathMatch: 'full' }
+    { path : 'app-liste-projet', component: ListeProjetComponent},
+    { path: '', redirectTo: '/connexion', pathMatch: 'full' }
 ];
