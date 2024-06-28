@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 /* Styles pour la classe page-content */
 .page-content {
     flex: 1;
@@ -19,3 +21,4 @@ body {
     transition: width 0.3s; /* Transition douce pour les animations */
 }
 
+>>>>>>> 2e19f7989e420fe214bf656aada0b4486ac4efe7
