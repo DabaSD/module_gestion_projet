@@ -1,0 +1,131 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<body>
+    <div class="side-nav">
+        <app-side-nav></app-side-nav>
+    </div>
+
+    <main  class="page-content">
+
+<div class="container p-0">
+    <div class="row">
+       
+        <div class="col-md-7 col-xl-8">
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="account" role="tabpanel">
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title mb-0">Mise en place d'un système de gestion des absences</h4>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                            <h5 class="card-title " style="color: #16c7ff;">Collaborateur(s)</h5>
+                                <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                        <label for="inputFirstName">E-mail</label>
+                                        <input type="text" class="form-control" id="inputFirstName" placeholder="you@gmail.com">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputLastName">Statut</label>
+                                        <input type="text" class="form-control" id="inputLastName" placeholder="">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputEmail4">Rôle</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected="">Chercheur permanent</option>
+                                            <option>Chercheur associé</option>
+                                            <option>Chercheur associé</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <button type="button" class="btn btn-success" style="position: relative; display: flex; left: 138vh;">Ajouter</button>
+                                    </div>
+                                </div>
+                               
+                                <h5 class="card-title " style="color: #16c7ff;">Bailleur(s)/Partenaire(s)</h5>
+                                <div class="form-row">
+                                    <div class="form-group col-md-3">
+                                        <label for="inputFirstName">Prenom et Nom</label>
+                                        <input type="text" class="form-control" id="inputFirstName" placeholder="">
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="inputEmail4">E-mail</label>
+                                        <input type="text" class="form-control" id="inputLastName" placeholder="you@gmail.com">
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="inputEmail4">Téléphone</label>
+                                        <input type="text" class="form-control" id="inputLastName" placeholder="+221 ">
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="inputEmail4">Organisation</label>
+                                        <input type="text" class="form-control" id="inputLastName" placeholder="">
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <button type="button" class="btn btn-success" style="position: relative; display: flex; left: 138vh;" (click)="ajoutChamp()">Ajouter</button>
+                                    </div>
+                                    <!--nouveaux champs-->
+                                    <div class="form-row"*ngFor="let champ of champs; let i = index">
+                                        <div class="form-group col-md-3">
+                                            <label for="inputFirstName{{i}}">Prenom et Nom</label>
+                                            <input type="text" class="form-control" id="inputFirstName{{i}}" placeholder="">
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <label for="inputEmail{{i}}">E-mail</label>
+                                            <input type="email" class="form-control" id="inputEmail{{i}}"  placeholder="you@gmail.com">
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <label for="inputPhone{{i}}">Téléphone</label>
+                                            <input type="telephone" class="form-control" id="inputPhone{{i}}" placeholder="+221 ">
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <label for="inputOrganization{{i}}">Organisation</label>
+                                            <input type="text" class="form-control" id="inputOrganization{{i}}" placeholder="">
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <button type="button" class="btn btn-success" style="position: relative; display: flex; left: 138vh;" (click)="ajoutChamp()">Ajouter</button>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+
+                                <h5 class="card-title " style="color: #16c7ff;">Financement</h5>
+                                <div class="form-row">
+                                    <div class="form-group col-md-3">
+                                        <label for="inputFirstName">Montant Global</label>
+                                        <input type="text" class="form-control" id="inputFirstName" placeholder="en CFA">
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="inputEmail4">Montant</label>
+                                        <input type="text" class="form-control" id="inputLastName" placeholder="en CFA">
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="inputEmail4">Téléphone</label>
+                                        <input type="text" class="form-control" id="inputLastName" placeholder="+221">
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <div class="mb-3">
+                                            <label for="formFileSm" class="form-label">Contrat de financement</label>
+                                            <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 col-md-5">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                
+                                 </div>
+                                <button type="submit" class="btn btn-primary" style="display: flex; position: relative; left: 66vh;">Enregistrer</button>
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+    </main>
+</body>

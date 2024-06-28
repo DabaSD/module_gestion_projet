@@ -1,0 +1,57 @@
+.page-content {
+    flex: 1;
+    padding: 20px; /* Ajuste le padding selon tes besoins */
+    overflow-y: auto; /* Pour permettre le défilement si le contenu dépasse la hauteur de la fenêtre */
+    background-color: #f4f4f9; /* Optionnel : couleur de fond pour différencier du side-nav */
+    transition: margin-left 0.3s; /* Transition douce pour le cas où le side-nav est caché/affiché */
+}
+
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    background: #edf2f7;
+}
+
+.side-nav {
+    width: 250px; /* Ajuste la largeur selon tes besoins */
+    background-color: cyan;
+    transition: width 0.3s; /* Transition douce pour les animations */
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.card {
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 15px 1px rgba(52,40,104,.08);
+}
+.card {
+    width: 154vh;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #e5e9f2;
+    border-radius: .2rem;
+}
+.card-header:first-child {
+    border-radius: calc(.2rem - 1px) calc(.2rem - 1px) 0 0;
+}
+.card-header {
+    border-bottom-width: 1px;
+}
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    color: inherit;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e9f2;
+}
