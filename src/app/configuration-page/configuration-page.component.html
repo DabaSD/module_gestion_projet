@@ -23,26 +23,47 @@
                                 <h5 class="card-title " style="color: #16c7ff;">Collaborateur(s)</h5>
                                 <div class="form-row">
                                     <div class="form-group col-md-4">
-                                        <label for="inputFirstName">E-mail</label>
-                                        <input type="text" class="form-control" id="inputFirstName" placeholder="you@gmail.com">
+                                        <label for="inputEmail">E-mail</label>
+                                        <input type="email" class="form-control" id="inputFirstName" placeholder="you@gmail.com">
                                     </div>
                                     <div class="form-group col-md-4">
-                                        <label for="inputLastName">Statut</label>
+                                        <label for="inputStatut">Statut</label>
                                         <input type="text" class="form-control" id="inputLastName" placeholder="">
                                     </div>
                                     <div class="form-group col-md-4">
-                                        <label for="inputEmail4">Rôle</label>
-                                        <select id="inputState" class="form-control">
+                                        <label for="inputRole">Rôle</label>
+                                        <select id="inputRole" class="form-control">
                                             <option selected="">Chercheur permanent</option>
                                             <option>Chercheur associé</option>
                                             <option>Chercheur associé</option>
                                         </select>
                                     </div>
-                                    <div class="form-group col-md-4">
-                                        <button type="button" class="btn btn-success" style="position: relative; display: flex; left: 138vh;">Ajouter</button>
+                                    <div class="form-group col-md-2">
+                                        <button type="button" class="btn btn-secondary" style="position: relative; display: flex; left: 138vh;" (click)="ajoutChamps()">Ajouter</button>
                                     </div>
                                 </div>
-                               
+                                <!--second form-->
+                                <div class="form-row" *ngFor="let form of forms; let i = index">
+                                    <div class="form-group col-md-4">
+                                        <label for="inputEmail{{i}}">E-mail</label>
+                                        <input type="email" class="form-control" id="inputEmail{{i}}" placeholder="you@gmail.com">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputStatut{{i}}">Statut</label>
+                                        <input type="text" class="form-control" id="inputStatut{{i}}" placeholder="">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputRole{{i}}">Rôle</label>
+                                        <select id="inputRole{{i}}" class="form-control">
+                                            <option selected="">Chercheur permanent</option>
+                                            <option>Chercheur associé</option>
+                                            <option>Chercheur associé</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <button type="button" class="btn btn-secondary" style="position: relative; display: flex; left: 138vh;" (click)="ajoutChamps()">Ajouter</button>
+                                    </div>
+                                </div>
                                 <h5 class="card-title " style="color: #16c7ff;">Bailleur(s)/Partenaire(s)</h5>
                                 <div class="form-row">
                                     <div class="form-group col-md-3">

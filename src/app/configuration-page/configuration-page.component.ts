@@ -13,6 +13,8 @@ import { CommonModule } from '@angular/common';
 export class ConfigurationPageComponent {
   // Tableau pour stocker les groupes de champs
   champs: { firstName: string, email: string, phone: string, organization: string }[] = [];
+  forms: { email: string, statut: string, role: string }[] = [];
+
 
   // Méthode pour ajouter un nouveau groupe de champs
   ajoutChamp() {
@@ -21,6 +23,13 @@ export class ConfigurationPageComponent {
       email: '',
       phone: '',
       organization: ''
+    });
+  }
+  ajoutChamps() {
+    this.forms.push({
+      email: '',
+      statut: '',
+      role: ''
     });
   }
 }
