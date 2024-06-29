@@ -20,7 +20,7 @@
                         </div>
                         <div class="card-body">
                             <form>
-                            <h5 class="card-title " style="color: #16c7ff;">Collaborateur(s)</h5>
+                                <h5 class="card-title " style="color: #16c7ff;">Collaborateur(s)</h5>
                                 <div class="form-row">
                                     <div class="form-group col-md-4">
                                         <label for="inputFirstName">E-mail</label>
@@ -62,31 +62,30 @@
                                         <input type="text" class="form-control" id="inputLastName" placeholder="">
                                     </div>
                                     <div class="form-group col-md-2">
-                                        <button type="button" class="btn btn-success" style="position: relative; display: flex; left: 138vh;" (click)="ajoutChamp()">Ajouter</button>
+                                        <button type="button" class="btn btn-secondary" style="position: relative; display: flex; left: 138vh;" (click)="ajoutChamp()">Ajouter</button>
                                     </div>
-                                    <!--nouveaux champs-->
-                                    <div class="form-row"*ngFor="let champ of champs; let i = index">
-                                        <div class="form-group col-md-3">
-                                            <label for="inputFirstName{{i}}">Prenom et Nom</label>
-                                            <input type="text" class="form-control" id="inputFirstName{{i}}" placeholder="">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label for="inputEmail{{i}}">E-mail</label>
-                                            <input type="email" class="form-control" id="inputEmail{{i}}"  placeholder="you@gmail.com">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label for="inputPhone{{i}}">Téléphone</label>
-                                            <input type="telephone" class="form-control" id="inputPhone{{i}}" placeholder="+221 ">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label for="inputOrganization{{i}}">Organisation</label>
-                                            <input type="text" class="form-control" id="inputOrganization{{i}}" placeholder="">
-                                        </div>
-                                        <div class="form-group col-md-2">
-                                            <button type="button" class="btn btn-success" style="position: relative; display: flex; left: 138vh;" (click)="ajoutChamp()">Ajouter</button>
-                                        </div>
+                                </div>
+                                 <!--nouveaux champs-->
+                                 <div class="form-row"*ngFor="let champ of champs; let i = index">
+                                    <div class="form-group col-md-3">
+                                        <label for="inputFirstName{{i}}">Prenom et Nom</label>
+                                        <input type="text" class="form-control" id="inputFirstName{{i}}" placeholder="">
                                     </div>
-                                   
+                                    <div class="form-group col-md-3">
+                                        <label for="inputEmail{{i}}">E-mail</label>
+                                        <input type="email" class="form-control" id="inputEmail{{i}}"  placeholder="you@gmail.com">
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="inputPhone{{i}}">Téléphone</label>
+                                        <input type="telephone" class="form-control" id="inputPhone{{i}}" placeholder="+221 ">
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="inputOrganization{{i}}">Organisation</label>
+                                        <input type="text" class="form-control" id="inputOrganization{{i}}" placeholder="">
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <button type="button" class="btn btn-secondary" style="position: relative; display: flex; left: 138vh;" (click)="ajoutChamp()">Ajouter</button>
+                                    </div>
                                 </div>
 
                                 <h5 class="card-title " style="color: #16c7ff;">Financement</h5>

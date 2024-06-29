@@ -15,14 +15,8 @@ export const routes: Routes = [
     { path: 'liste-role', component:  ListeRoleComponent,},
     { path: 'profil-role', component:  ProfilRoleComponent,},
     { path: 'sidenav', component:  SideNavComponent,},
-<<<<<<< HEAD
     { path: 'ajoutProjet', component:  AjoutProjetComponent,},
     { path: 'configuration-page', component:  ConfigurationPageComponent,},
     { path: 'ressourceHumaine', component:  RessourceHumaineComponent,},
     { path: '', redirectTo: '/accueil', pathMatch: 'full' }
-=======
-    { path : 'app-liste-projet', component: ListeProjetComponent},
-    { path: '', redirectTo: '/connexion', pathMatch: 'full' },
-    { path: 'ajoutProjet', component:  AjoutProjetComponent,}
->>>>>>> origin/ajout_projet
 ];
