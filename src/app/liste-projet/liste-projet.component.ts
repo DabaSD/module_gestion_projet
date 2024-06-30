@@ -12,7 +12,7 @@ import { Projet } from '../modèles/projet';
 @Component({
   selector: 'app-liste-projet',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive,SideNavComponent, HttpClientModule],
+  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive,SideNavComponent, HttpClientModule ],
   templateUrl: './liste-projet.component.html',
   styleUrl: './liste-projet.component.css'
 })
